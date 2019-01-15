@@ -18,11 +18,20 @@
     <div class="color blue" id="blue"></div>
   </div>
   <script>
-  $(function(){
-    var changeColor = $(this).attr('id');
-    $("div").mouseover();
-    $("#text").css('color', changeColor);
+  $(function() {
+  $('#green').mouseover(function(){
+    $('#text').css('color','green');
   });
+   $('#red').mouseover(function(){
+    $('#text').css('color','red');
+  });
+  $('#blue').mouseover(function(){
+    $('#text').css('color','blue');
+  });
+  $('#green, #red, #blue').mouseout(function(){
+    $('#text').css('color','black');
+  });
+});
   </script>
 </body>
 </html>
