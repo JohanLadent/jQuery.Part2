@@ -19,19 +19,15 @@
   </div>
   <script>
   $(function() {
-  $('#green').mouseover(function(){
-    $('#text').css('color','green');
-  });
-   $('#red').mouseover(function(){
-    $('#text').css('color','red');
-  });
-  $('#blue').mouseover(function(){
-    $('#text').css('color','blue');
-  });
-  $('#green, #red, #blue').mouseout(function(){
-    $('#text').css('color','black');
-  });
-});
-  </script>
-</body>
-</html>
+    $('.color').mouseover(function(){
+      var color = $(this).attr('id');
+      $("#text").css('color', color);
+    });
+    // inherit = valeur initiale d'un element.
+      $('.color').mouseout(function(){
+        $('#text').css('color','inherit');
+      });
+    });
+    </script>
+    </body>
+    </html>

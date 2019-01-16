@@ -18,12 +18,21 @@
     <div class="color blue" id="blue"></div>
   </div>
   <script>
-    $(function() {
-      $(".color").click(function() {
-        var changeColor = $(this).attr('id');
-        $("#text").css("color", changeColor);
+    // $(function() {
+    //   $(".color").click(function() {
+    //     var changeColor = $(this).attr('id');
+    //     $("#text").css("color", changeColor);
+    //   });
+    // });
+
+    $(function () {
+      $('.color').click(function(){
+        var color = $(this).attr('id');
+        $("#text").css('color', color);        
       });
     });
+
+
 </script>
 </body>
 </html>
